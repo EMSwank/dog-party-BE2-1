@@ -1,0 +1,60 @@
+body {
+  font-family: 'Railway', sans-serif;
+  grid-template-columns: 1fr;
+  grid-template-areas: "nav"
+                       "title"
+                       "main"
+                       "footer";
+  text-align: center;
+}
+
+nav {
+  grid-area: "nav";
+  background-color: #98DFE5;
+  padding: 10px;
+}
+
+nav img {
+  height: 30px;
+  float: left;
+}
+
+nav ul {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+nav li {
+  display: block;
+}
+
+button {
+  color: #438DA6;
+  border: 2px solid #438DA6;
+}
+
+.title {
+  grid-area: "title";
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  background-image: url(/Users/eliotswank/turing/mod2-redux/hw/dog-party-BE2-1/images/park.jpg)
+}
+
+.title>.button {
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  grid-area: "main";
+  display: inline-flex;
+  justify-content: center;
+}
+
+.main img {
+  height: 200px;
+}
